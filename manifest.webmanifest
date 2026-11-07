@@ -1,0 +1,17 @@
+{
+  "name": "Greek Café · World Radio",
+  "short_name": "Greek Café Radio",
+  "description": "Original-Livestreams aus Griechenland, Deep House, Lounge und R&B.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07111e",
+  "theme_color": "#081425",
+  "icons": [
+    {
+      "src": "./logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

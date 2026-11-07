@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#081425">
+<meta name="description" content="Greek Café World Radio: griechische Live-Sender, Deep House, Lounge und R&B. Direkter Stream, ohne Account, Mikrofon oder Werbung in der App.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./style.css">
+<title>Greek Café · World Radio</title>
+</head>
+<body>
+<main class="app">
+  <header class="topbar">
+    <div class="identity">
+      <div class="mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M9 13v18m7-23v28m7-18v8m7-20v32m7-23v14" stroke="#7be4f7" stroke-linecap="round" stroke-width="3"/><path d="M8 36h30" stroke="#edc58e" stroke-width="2"/></svg></div>
+      <div><div class="overline">GREEK CAFÉ · ONLINE ADD-ON</div><h1>WORLD RADIO</h1></div>
+    </div>
+    <span class="connection" id="connection"><span class="status-light"></span> LIVE RADIO</span>
+  </header>
+
+  <div class="lead">
+    <div><p class="eyebrow">ECHTE SENDER AUS DER WELT</p><h2>Dein Sound.<br><em>Deine Lounge.</em></h2>
+    <p class="intro">Griechisch, Laïká, Nonstop Deep House, Lounge und R&amp;B. Direkt vom Sender – ohne Umwandlung in Robotertöne.</p></div>
+    <div class="coverart" aria-label="Visualisierung von Schallwellen">
+      <div class="vinyl"><span class="vinyl-center"></span></div>
+      <div class="vinyl-glow"></div>
+    </div>
+  </div>
+
+  <section class="player" aria-label="Radioplayer">
+    <div class="play-info">
+      <div><div class="eyebrow">JETZT AUSGEWÄHLT</div>
+      <h3 id="now-title">Sender auswählen</h3><p id="now-sub">Wähle unten deinen Live-Sender.</p></div>
+      <span id="play-state" class="state">BEREIT</span>
+    </div>
+    <canvas id="visualizer" width="960" height="110" aria-label="Audio-Visualisierung"></canvas>
+    <div class="player-controls">
+      <button type="button" class="round secondary" id="btn-prev" aria-label="Vorheriger Sender" title="Vorheriger Sender">‹</button>
+      <button type="button" class="round play" id="btn-play" aria-label="Wiedergabe starten">▶</button>
+      <button type="button" class="round secondary" id="btn-next" aria-label="Nächster Sender" title="Nächster Sender">›</button>
+      <div class="volume-control"><span>VOL</span><input id="volume" type="range" min="0" max="100" value="72" aria-label="Lautstärke"><output id="volume-label">72%</output></div>
+    </div>
+    <div class="player-bottom">
+      <div id="stream-status" role="status" aria-live="polite">Bereit. Beim ersten Start ▶ drücken.</div>
+      <label class="room-switch" title="Leichter digitaler Raumhall, wenn der Radiosender Web-Audio-Bearbeitung erlaubt"><input type="checkbox" id="room" checked><span>Mini-Raumklang</span></label>
+    </div>
+    <div class="technical-note" id="quality-note">Originalstream direkt vom Radiosender. Kein Mikrofon und keine künstliche Sprach-/Musiksynthese.</div>
+  </section>
+
+  <section class="catalog" aria-label="Radiosender">
+    <div class="section-head"><div><p class="eyebrow">STATION DIRECTORY</p><h2>Radiosender</h2></div>
+    <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Sender suchen …" aria-label="Sender suchen"></div></div>
+    <div id="filters" class="filters" role="group" aria-label="Musikkategorie"></div>
+    <div id="stations" class="stations"></div>
+    <p class="empty" id="empty" hidden>Keine Sender gefunden.</p>
+  </section>
+  <footer>
+    <p><strong>Ohne App-Werbung.</strong> Werbung, die ein Radiosender direkt ins Programm einspielt, kann nicht herausgefiltert werden. Die Auswahl enthält bevorzugt Nonstop- und werbearme Angebote.</p>
+    <p>Der Webplayer spielt echte Internetradiostreams auf deinem Gerät ab. Er wird nicht automatisch als 3D-Audio in Roblox ausgegeben; dort bleibt die integrierte Roblox-Radioanlage separat nutzbar. Streamingrechte verbleiben bei den Sendern.</p>
+    <p class="footbrand">GREEK CAFÉ · WORLD RADIO ADD-ON</p>
+  </footer>
+</main>
+<script src="./stations.js" defer></script>
+<script src="./app.js" defer></script>
+</body>
+</html>
