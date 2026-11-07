@@ -1,5 +1,6 @@
 /* Greek Café World Radio · directly from broadcasters · no proxy or rehosting */
 window.GREEK_CAFE_STATIONS = [
+ {id:"sfera-1022",name:"Sfera 102.2 · Athens",category:"Griechisch · Modern",label:"GR · LIVE · TEST",icon:"GR",quality:"128 kbps AAC",stream:"https://sfera.live24.gr/sfera4132"},
  {id:"ert-laika",name:"ERT · Déftero Laïká",category:"Griechisch · Laïká",label:"GR · LAÏKÁ",icon:"GR",quality:"256 kbps",stream:"https://radiostreaming.ert.gr/ert-talaika"},
  {id:"laikasematzore",name:"Laïká se Matzore",category:"Griechisch · Laïká",label:"GR · LAÏKÁ",icon:"GR",quality:"320 kbps",stream:"https://sp.streams.ovh:8040/stream"},
  {id:"rythmos",name:"Rythmos 94.6",category:"Griechisch · Modern",label:"GR · MODERN",icon:"GR",quality:"128 kbps",stream:"https://sc2.streamwithq.com:2000/stream/Rithmos946"},
